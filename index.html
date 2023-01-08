@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900;1000&display=swap" rel="stylesheet">
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="landing" id="landing">
+        <div class="box">
+            <h1>Welcom to chat app </h1>
+            <p>Enter your name to contenue</p>
+            <form id="name-form">
+                <label for="name">
+                    <input required autofocus type="text" id="name" placeholder="Name">
+                </label>
+                <button type="submit"> Join </button>
+            </form>
+        </div>
+
+    </div>
+    <div class="page" id="page">
+
+        <div id="message-container" class="message-container container ">
+            <div class="notification left" username="ali"></div>
+            <div class="notification join" username="ali"></div>
+            <div class="message">
+                <img src="https://via.placeholder.com/150" alt="">
+                <p username="mohammed">hiii message</p>
+            </div>
+            <div class="message sent">
+                <img src="https://via.placeholder.com/150" alt="">
+                <p username="you">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quidem necessitatibus aliquid, provident, illum tenetur veniam eos vel eum temporibus illo exercitationem repudiandae similique aperiam, laboriosam nam mollitia ducimus officiis.</p>
+            </div>
+            <div class="message sent">
+                <img src="https://via.placeholder.com/150" alt="">
+                <p username="you">hiii message</p>
+            </div>
+
+        </div>
+        <form id="send-form" class="container" method="dialog ">
+            <input type="text" id="message-input" placeholder="Enter Your Message">
+            <button autofocus type="submit" id="send-button"><i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
